@@ -1,36 +1,121 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎨 Synapse - Collaborative Design Platform
 
-## Getting Started
+## 📝 Project Description
 
-First, run the development server:
+Synapse is an innovative, web-based collaborative design platform that enables designers to create, share, and collaborate in real-time. Built with modern web technologies, Synapse aims to revolutionize digital design collaboration.
 
+## 🚀 Features (Planned/In Development)
+
+- 👤 User Authentication
+  - Email/Password Login
+  - OAuth (Google, GitHub)
+- 🎨 Advanced Design Workspace
+  - Infinite Canvas
+  - Multiple Drawing Tools
+  - Layer Management
+- 🤝 Real-time Collaboration
+  - Live Cursor Tracking
+  - In-canvas Chat
+  - Simultaneous Editing
+- 📦 Design System Management
+  - Component Library
+  - Color Palette Creation
+  - Typography Controls
+
+## 💻 Tech Stack
+
+- **Frontend**: Next.js 15+
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **State Management**: Zustand
+- **Authentication**: NextAuth.js
+- **Real-time**: Socket.io
+- **Rendering**: Fabric.js
+
+## 🔧 Prerequisites
+
+- Node.js (v18+ recommended)
+- npm or yarn
+- Git
+
+## 🏗️ Local Setup
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/Nirpendra09/synapse.git
+cd synapse
+```
+
+### 2. Install Dependencies
+```bash
+npm install
+# or
+yarn install
+```
+
+### 3. Environment Configuration
+Create a `.env.local` file in the project root:
+```
+# Authentication
+NEXTAUTH_SECRET=your_nextauth_secret
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+GITHUB_CLIENT_ID=your_github_client_id
+GITHUB_CLIENT_SECRET=your_github_client_secret
+
+# Database
+DATABASE_URL=your_database_connection_string
+```
+
+### 4. Run Development Server
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔒 Authentication Setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Configure OAuth applications:
+   - Google Developer Console
+   - GitHub Developer Settings
+2. Add callback URLs
+3. Generate client credentials
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Build for Production
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## 🧪 Testing
+```bash
+npm run test
+# or
+yarn test
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 🤝 Contributing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📋 Project Roadmap
 
-## Deploy on Vercel
+- [x] Project Setup
+- [x] Authentication System
+- [ ] Basic Design Workspace
+- [ ] Collaboration Features
+- [ ] Advanced Design Tools
+- [ ] Performance Optimization
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🙏 Acknowledgements
+
+- Next.js
+- Tailwind CSS
+- NextAuth.js
+- Socket.io
